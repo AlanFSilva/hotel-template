@@ -1,35 +1,40 @@
-import { memo } from "react";
+import { memo, createRef } from "react";
 import type { FC } from "react";
-
-import classes from "./App.module.css";
-import resets from "./components/_resets.module.css";
-import { Home } from "./components/Home/Home";
-
-interface Props {
-  className?: string;
-}
-
-import { createRef } from "react";
 import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
   NavLink,
   useLocation,
-  useOutlet
+  useOutlet,
 } from "react-router-dom";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import classes from "./App.module.css";
+import resets from "./components/_resets.module.css";
+import { Home } from "./components/Home/Home";
+import { Acomodacoes } from "./components/Acomodacoes/Acomodacoes";
+
+interface Props {
+  className?: string;
+}
+
+interface Props {
+  className?: string;
+}
 
 const routes = [
-  { path: "/", name: "Home", element: <Home />, nodeRef: createRef() }
+  { path: "/", name: "Home", element: <Home />, nodeRef: createRef() },
+  {
+    path: "/acomodacoes",
+    name: "Acomodacoes",
+    element: <Acomodacoes />,
+    nodeRef: createRef(),
+  },
 ];
 
 const Example: FC<Props> = memo(function App(props = {}) {
   const location = useLocation();
   const currentOutlet = useOutlet();
-  const { nodeRef } =
-    routes.find((route) => route.path === location.pathname) ?? {};
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <>
@@ -50,24 +55,9 @@ const Example: FC<Props> = memo(function App(props = {}) {
             </Navbar> */}
 
         <Container className="container">
-          <SwitchTransition>
-            <CSSTransition
-              key={location.pathname}
-              nodeRef={nodeRef}
-              timeout={300}
-              classNames="page"
-              unmountOnExit
-            >
-              {(state) => (
-                <div
-                  ref={nodeRef}
-                  className={`${resets.storybrainResets} ${classes.root}`}
-                >
-                  {currentOutlet}
-                </div>
-              )}
-            </CSSTransition>
-          </SwitchTransition>
+          <div className={`${resets.storybrainResets} ${classes.root}`}>
+            {currentOutlet}
+          </div>
         </Container>
       </>
     </div>
@@ -81,11 +71,10 @@ const router = createBrowserRouter([
     children: routes.map((route) => ({
       index: route.path === "/",
       path: route.path === "/" ? undefined : route.path,
-      element: route.element
-    }))
-  }
+      element: route.element,
+    })),
+  },
 ]);
 
-const container = document.getElementById("root");
-const root = createRoot(container);
+const root = createRoot(document.getElementById("root")!);
 root.render(<RouterProvider router={router} />);

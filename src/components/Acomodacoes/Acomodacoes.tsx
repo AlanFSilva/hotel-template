@@ -1,39 +1,39 @@
-import { memo } from 'react';
-import type { FC } from 'react';
+import { memo } from "react";
+import type { FC } from "react";
 
-import resets from '../_resets.module.css';
-import classes from './Acomodacoes.module.css';
-import { Button_StateDefaultChangeIconI2 } from './Button_StateDefaultChangeIconI2/Button_StateDefaultChangeIconI2';
-import { Button_StateDefaultChangeIconI } from './Button_StateDefaultChangeIconI/Button_StateDefaultChangeIconI';
-import { Button_StateDefaultChangeIconN2 } from './Button_StateDefaultChangeIconN2/Button_StateDefaultChangeIconN2';
-import { Button_StateDefaultChangeIconN } from './Button_StateDefaultChangeIconN/Button_StateDefaultChangeIconN';
-import { Cafe_FilledTrue } from './Cafe_FilledTrue/Cafe_FilledTrue';
-import { Calendar_FillTrue } from './Calendar_FillTrue/Calendar_FillTrue';
-import { Chevron_down } from './Chevron_down/Chevron_down';
-import { Component24_Property1IonBed } from './Component24_Property1IonBed/Component24_Property1IonBed';
-import { Component25 } from './Component25/Component25';
-import { Heart_FillTrue } from './Heart_FillTrue/Heart_FillTrue';
-import { Search_FillTrue } from './Search_FillTrue/Search_FillTrue';
-import { TextField_StyleOutlinedStateEn2 } from './TextField_StyleOutlinedStateEn2/TextField_StyleOutlinedStateEn2';
-import { TextField_StyleOutlinedStateEn3 } from './TextField_StyleOutlinedStateEn3/TextField_StyleOutlinedStateEn3';
-import { TextField_StyleOutlinedStateEn } from './TextField_StyleOutlinedStateEn/TextField_StyleOutlinedStateEn';
-import { User_UserTrue } from './User_UserTrue/User_UserTrue';
-import { Vector1Icon } from './Vector1Icon';
-import { VectorIcon } from './VectorIcon';
-import { VectorIcon2 } from './VectorIcon2';
-import { VectorIcon3 } from './VectorIcon3';
-import { VectorIcon4 } from './VectorIcon4';
-import { VectorIcon5 } from './VectorIcon5';
-import { VectorIcon6 } from './VectorIcon6';
-import { VectorIcon7 } from './VectorIcon7';
-import { VectorIcon8 } from './VectorIcon8';
-import { VectorIcon9 } from './VectorIcon9';
-import { VectorIcon10 } from './VectorIcon10';
-import { VectorIcon11 } from './VectorIcon11';
-import { VectorIcon12 } from './VectorIcon12';
-import { VectorIcon13 } from './VectorIcon13';
-import { VectorIcon14 } from './VectorIcon14';
-import { VectorIcon15 } from './VectorIcon15';
+import resets from "../_resets.module.css";
+import classes from "./Acomodacoes.module.css";
+import { Button_StateDefaultChangeIconI2 } from "./Button_StateDefaultChangeIconI2/Button_StateDefaultChangeIconI2";
+import { Button_StateDefaultChangeIconI } from "./Button_StateDefaultChangeIconI/Button_StateDefaultChangeIconI";
+import { Button_StateDefaultChangeIconN2 } from "./Button_StateDefaultChangeIconN2/Button_StateDefaultChangeIconN2";
+import { Button_StateDefaultChangeIconN } from "./Button_StateDefaultChangeIconN/Button_StateDefaultChangeIconN";
+import { Cafe_FilledTrue } from "./Cafe_FilledTrue/Cafe_FilledTrue";
+import { Calendar_FillTrue } from "./Calendar_FillTrue/Calendar_FillTrue";
+import { Chevron_down } from "./Chevron_down/Chevron_down";
+import { Component24_Property1IonBed } from "./Component24_Property1IonBed/Component24_Property1IonBed";
+import { Component25 } from "./Component25/Component25";
+import { Heart_FillTrue } from "./Heart_FillTrue/Heart_FillTrue";
+import { Search_FillTrue } from "./Search_FillTrue/Search_FillTrue";
+import { TextField_StyleOutlinedStateEn2 } from "./TextField_StyleOutlinedStateEn2/TextField_StyleOutlinedStateEn2";
+import { TextField_StyleOutlinedStateEn3 } from "./TextField_StyleOutlinedStateEn3/TextField_StyleOutlinedStateEn3";
+import { TextField_StyleOutlinedStateEn } from "./TextField_StyleOutlinedStateEn/TextField_StyleOutlinedStateEn";
+import { User_UserTrue } from "./User_UserTrue/User_UserTrue";
+import { Vector1Icon } from "./Vector1Icon";
+import { VectorIcon } from "./VectorIcon";
+import { VectorIcon2 } from "./VectorIcon2";
+import { VectorIcon3 } from "./VectorIcon3";
+import { VectorIcon4 } from "./VectorIcon4";
+import { VectorIcon5 } from "./VectorIcon5";
+import { VectorIcon6 } from "./VectorIcon6";
+import { VectorIcon7 } from "./VectorIcon7";
+import { VectorIcon8 } from "./VectorIcon8";
+import { VectorIcon9 } from "./VectorIcon9";
+import { VectorIcon10 } from "./VectorIcon10";
+import { VectorIcon11 } from "./VectorIcon11";
+import { VectorIcon12 } from "./VectorIcon12";
+import { VectorIcon13 } from "./VectorIcon13";
+import { VectorIcon14 } from "./VectorIcon14";
+import { VectorIcon15 } from "./VectorIcon15";
 
 interface Props {
   className?: string;
@@ -66,8 +66,14 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
               supportingText: true,
             }}
             text={{
-              inputText: <div className={classes.inputText}>Rio de Janeiro</div>,
-              labelText: <div className={classes.labelText}>Escolha uma de nossas unidades</div>,
+              inputText: (
+                <div className={classes.inputText}>Rio de Janeiro</div>
+              ),
+              labelText: (
+                <div className={classes.labelText}>
+                  Escolha uma de nossas unidades
+                </div>
+              ),
             }}
           />
           <TextField_StyleOutlinedStateEn2
@@ -104,7 +110,9 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
               supportingText: true,
             }}
             text={{
-              inputText: <div className={classes.inputText3}>Segunda 05/06</div>,
+              inputText: (
+                <div className={classes.inputText3}>Segunda 05/06</div>
+              ),
               labelText: <div className={classes.labelText3}>Check Out</div>,
             }}
           />
@@ -130,8 +138,12 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
               supportingText: true,
             }}
             text={{
-              inputText: <div className={classes.inputText4}>1 quarto, 2 hóspedes</div>,
-              labelText: <div className={classes.labelText4}>Quartos / Hóspedes</div>,
+              inputText: (
+                <div className={classes.inputText4}>1 quarto, 2 hóspedes</div>
+              ),
+              labelText: (
+                <div className={classes.labelText4}>Quartos / Hóspedes</div>
+              ),
             }}
           />
           <Button_StateDefaultChangeIconI
@@ -160,7 +172,7 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
       <div className={classes.vector1}>
         <Vector1Icon className={classes.icon16} />
       </div>
-      <div className={classes.lOGO}>LUXOR</div>
+      <div className={classes.lOGO}>DELUXE</div>
       <div className={classes.frame121}>
         <div className={classes.frame110}>
           <div className={classes.exibindo4De30Opcoes}>
@@ -200,7 +212,9 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
                             vector: <VectorIcon8 className={classes.icon8} />,
                           }}
                         />
-                        <div className={classes.cafeDaManhaInclusoE}>Café da manhã Incluso e +</div>
+                        <div className={classes.cafeDaManhaInclusoE}>
+                          Café da manhã Incluso e +
+                        </div>
                       </div>
                       <div className={classes.frame53}></div>
                     </div>
@@ -215,7 +229,10 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
                       <div className={classes.muitoBom130Avaliacoes}>
                         <p className={classes.labelWrapper3}>
                           <span className={classes.label5}>Muito Bom</span>
-                          <span className={classes.label6}> 130 avaliações</span>
+                          <span className={classes.label6}>
+                            {" "}
+                            130 avaliações
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -273,7 +290,9 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
                             vector: <VectorIcon10 className={classes.icon10} />,
                           }}
                         />
-                        <div className={classes.cafeDaManhaInclusoE2}>Café da manhã Incluso e +</div>
+                        <div className={classes.cafeDaManhaInclusoE2}>
+                          Café da manhã Incluso e +
+                        </div>
                       </div>
                       <div className={classes.frame532}></div>
                     </div>
@@ -288,7 +307,10 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
                       <div className={classes.muitoBom37Avaliacoes}>
                         <p className={classes.labelWrapper5}>
                           <span className={classes.label9}>Muito Bom</span>
-                          <span className={classes.label10}> 37 avaliações</span>
+                          <span className={classes.label10}>
+                            {" "}
+                            37 avaliações
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -346,7 +368,9 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
                             vector: <VectorIcon12 className={classes.icon12} />,
                           }}
                         />
-                        <div className={classes.cafeDaManhaInclusoE3}>Café da manhã Incluso e +</div>
+                        <div className={classes.cafeDaManhaInclusoE3}>
+                          Café da manhã Incluso e +
+                        </div>
                       </div>
                       <div className={classes.frame533}></div>
                     </div>
@@ -361,7 +385,10 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
                       <div className={classes.muitoBom71Avaliacoes}>
                         <p className={classes.labelWrapper7}>
                           <span className={classes.label13}>Muito Bom</span>
-                          <span className={classes.label14}> 71 avaliações</span>
+                          <span className={classes.label14}>
+                            {" "}
+                            71 avaliações
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -419,7 +446,9 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
                             vector: <VectorIcon14 className={classes.icon14} />,
                           }}
                         />
-                        <div className={classes.cafeDaManhaInclusoE4}>Café da manhã Incluso e +</div>
+                        <div className={classes.cafeDaManhaInclusoE4}>
+                          Café da manhã Incluso e +
+                        </div>
                       </div>
                       <div className={classes.frame534}></div>
                     </div>
@@ -434,7 +463,10 @@ export const Acomodacoes: FC<Props> = memo(function Acomodacoes(props = {}) {
                       <div className={classes.muitoBom31Avaliacoes}>
                         <p className={classes.labelWrapper9}>
                           <span className={classes.label17}>Muito Bom</span>
-                          <span className={classes.label18}> 31 avaliações</span>
+                          <span className={classes.label18}>
+                            {" "}
+                            31 avaliações
+                          </span>
                         </p>
                       </div>
                     </div>
