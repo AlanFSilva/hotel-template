@@ -1,0 +1,47 @@
+.root {
+  position: absolute;
+  left: -33px;
+  top: -26px;
+  width: 1520px;
+  height: 1045px;
+  align-items: flex-start;
+}
+.rectangle2 {
+  position: absolute;
+  left: 33px;
+  top: 26px;
+  width: 1440px;
+  height: 974px;
+  background-image:/* webpackIgnore: true */ url('assets/rectangle2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/banner.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/banner.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 0px -1px;
+  mask-position: 0px -1px;
+  -webkit-mask-size: 1440px 975px;
+  mask-size: 1440px 975px;
+}
+.ellipse1 {
+  position: absolute;
+  left: 763px;
+  top: 293px;
+  width: 35px;
+  height: 34px;
+  overflow: visible;
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/banner.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/banner.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: -730px -268px;
+  mask-position: -730px -268px;
+  -webkit-mask-size: 1440px 975px;
+  mask-size: 1440px 975px;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
