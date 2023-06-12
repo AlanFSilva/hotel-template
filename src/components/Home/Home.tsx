@@ -1,5 +1,7 @@
 import { memo } from "react";
 import type { FC } from "react";
+import { NavLink } from "react-router-dom";
+import { Nav } from "react-bootstrap";
 
 import resets from "../_resets.module.css";
 import { AddOutline } from "./AddOutline/AddOutline";
@@ -185,7 +187,7 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               className={classes.button2}
               classes={{ style_layer: classes.style_layer }}
               text={{
-                button: <div className={classes.button}>Reserve Agora</div>
+                button: <div className={classes.button}>Reserve Agora</div>,
               }}
             />
           </div>
@@ -208,7 +210,7 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               className={classes.button4}
               classes={{ style_layer: classes.style_layer2 }}
               text={{
-                button: <div className={classes.button3}>Reserve Agora</div>
+                button: <div className={classes.button3}>Reserve Agora</div>,
               }}
             />
           </div>
@@ -231,7 +233,7 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               className={classes.button6}
               classes={{ style_layer: classes.style_layer3 }}
               text={{
-                button: <div className={classes.button5}>Reserve Agora</div>
+                button: <div className={classes.button5}>Reserve Agora</div>,
               }}
             />
           </div>
@@ -252,7 +254,7 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               className={classes.button8}
               classes={{ style_layer: classes.style_layer4 }}
               text={{
-                button: <div className={classes.button7}>Reserve Agora</div>
+                button: <div className={classes.button7}>Reserve Agora</div>,
               }}
             />
           </div>
@@ -274,13 +276,13 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               iconsSearch_24px: (
                 <Component24_Property1IonBed
                   swap={{
-                    vector: <VectorIcon className={classes.icon} />
+                    vector: <VectorIcon className={classes.icon} />,
                   }}
                 />
-              )
+              ),
             }}
             hide={{
-              supportingText: true
+              supportingText: true,
             }}
             text={{
               inputText: (
@@ -290,7 +292,7 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
                 <div className={classes.labelText}>
                   Escolha uma de nossas unidades
                 </div>
-              )
+              ),
             }}
           />
           <TextField_StyleOutlinedStateEn2
@@ -299,17 +301,17 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               chevronDown: (
                 <Calendar_FillTrue
                   swap={{
-                    vector: <VectorIcon2 className={classes.icon2} />
+                    vector: <VectorIcon2 className={classes.icon2} />,
                   }}
                 />
-              )
+              ),
             }}
             hide={{
-              supportingText: true
+              supportingText: true,
             }}
             text={{
               inputText: <div className={classes.inputText2}>Sexta 02/06</div>,
-              labelText: <div className={classes.labelText2}>Check In</div>
+              labelText: <div className={classes.labelText2}>Check In</div>,
             }}
           />
           <TextField_StyleOutlinedStateEn2
@@ -318,19 +320,19 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               chevronDown: (
                 <Calendar_FillTrue
                   swap={{
-                    vector: <VectorIcon3 className={classes.icon3} />
+                    vector: <VectorIcon3 className={classes.icon3} />,
                   }}
                 />
-              )
+              ),
             }}
             hide={{
-              supportingText: true
+              supportingText: true,
             }}
             text={{
               inputText: (
                 <div className={classes.inputText3}>Segunda 05/06</div>
               ),
-              labelText: <div className={classes.labelText3}>Check Out</div>
+              labelText: <div className={classes.labelText3}>Check Out</div>,
             }}
           />
           <TextField_StyleOutlinedStateEn3
@@ -339,20 +341,20 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               iconsSearch_24px: (
                 <User_UserTrue
                   swap={{
-                    vector: <VectorIcon4 className={classes.icon4} />
+                    vector: <VectorIcon4 className={classes.icon4} />,
                   }}
                 />
               ),
               chevronDown: (
                 <Chevron_down
                   swap={{
-                    vector: <VectorIcon5 className={classes.icon5} />
+                    vector: <VectorIcon5 className={classes.icon5} />,
                   }}
                 />
-              )
+              ),
             }}
             hide={{
-              supportingText: true
+              supportingText: true,
             }}
             text={{
               inputText: (
@@ -360,7 +362,7 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               ),
               labelText: (
                 <div className={classes.labelText4}>Quartos / Hóspedes</div>
-              )
+              ),
             }}
           />
         </div>
@@ -370,7 +372,7 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
               <AddOutline
                 className={classes.addOutline}
                 swap={{
-                  vector: <VectorIcon6 className={classes.icon6} />
+                  vector: <VectorIcon6 className={classes.icon6} />,
                 }}
               />
               <div className={classes.button11}>Adicionar Cupom</div>
@@ -384,13 +386,13 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
                   className={classes.building}
                   swap={{
                     vector: <VectorIcon7 className={classes.icon7} />,
-                    vector2: <VectorIcon8 className={classes.icon8} />
+                    vector2: <VectorIcon8 className={classes.icon8} />,
                   }}
                 />
-              )
+              ),
             }}
             text={{
-              button: <div className={classes.button9}>Buscar Opções</div>
+              button: <div className={classes.button9}>Buscar Opções</div>,
             }}
           />
         </div>
@@ -401,7 +403,15 @@ export const Home: FC<Props> = memo(function Home(props = {}) {
       <div className={classes.cardapio}>Cardápio</div>
       <div className={classes.contato}>Contato</div>
       <div className={classes.unidades}>Unidades</div>
-      <div className={classes.acomodacoes}>Acomodações</div>
+      <Nav.Link
+        key={"/acomodacoes"}
+        as={NavLink}
+        to={"/acomodacoes"}
+        className={classes.acomodacoes}
+        end
+      >
+        Acomodações
+      </Nav.Link>
       <div className={classes.login}>Login</div>
       <div className={classes.rectangle42}></div>
       <div className={classes.pT}>PT</div>

@@ -1,14 +1,14 @@
-import { memo } from 'react';
-import type { FC } from 'react';
+import { memo } from "react";
+import type { FC } from "react";
 
-import resets from '../../_resets.module.css';
-import classes from './Component25.module.css';
-import { Path38Icon } from './Path38Icon';
-import { Path39Icon } from './Path39Icon';
-import { Path40Icon } from './Path40Icon';
-import { Rectangle130Icon } from './Rectangle130Icon';
-import { Rectangle131Icon } from './Rectangle131Icon';
-import { Union3Icon } from './Union3Icon';
+import resets from "../../_resets.module.css";
+import classes from "./Component25.module.css";
+import { Path38Icon } from "./Path38Icon";
+import { Path39Icon } from "./Path39Icon";
+import { Path40Icon } from "./Path40Icon";
+import { Rectangle130Icon } from "./Rectangle130Icon";
+import { Rectangle131Icon } from "./Rectangle131Icon";
+import { Union3Icon } from "./Union3Icon";
 
 interface Props {
   className?: string;
@@ -28,7 +28,9 @@ export const Component25: FC<Props> = memo(function Component25(props = {}) {
         <Rectangle131Icon className={classes.icon3} />
       </div>
       <div className={classes.cADASTRAR}>CADASTRAR</div>
-      <div className={classes.fIQUEPORDENTRODASNOSSASPROMOCO}>FIQUE POR DENTRO DAS NOSSAS PROMOÇÕES</div>
+      <div className={classes.fIQUEPORDENTRODASNOSSASPROMOCO}>
+        FIQUE POR DENTRO DAS NOSSAS PROMOÇÕES
+      </div>
       <div className={classes.facebookTwitterInstagram}>
         <div className={classes.textBlock}>Facebook</div>
         <div className={classes.textBlock2}>Twitter</div>
@@ -44,16 +46,18 @@ export const Component25: FC<Props> = memo(function Component25(props = {}) {
         <Path40Icon className={classes.icon6} />
       </div>
       <div className={classes.ruaSoledade512SantaEfigeniaBel}>
-        <div className={classes.textBlock4}>Rua Soledade 512, Santa Efigênia, Belo Horizonte - MG</div>
+        <div className={classes.textBlock4}>
+          Rua Soledade 512, Santa Efigênia, Belo Horizonte - MG
+        </div>
         <div className={classes.textBlock5}>+55(31) 2762-7822</div>
-        <div className={classes.textBlock6}>contato@luxor.com</div>
+        <div className={classes.textBlock6}>contato@DELUXE.com</div>
       </div>
       <div className={classes.navItem}>Cardápio</div>
       <div className={classes.navItem2}>Contato</div>
       <div className={classes.navItem3}>Unidades</div>
       <div className={classes.navItem4}>Acomodações</div>
-      <div className={classes.GrupoLUXOR}>© Grupo LUXOR</div>
-      <div className={classes.lOGO}>LUXOR</div>
+      <div className={classes.GrupoLUXOR}>© Grupo DELUXE</div>
+      <div className={classes.lOGO}>DELUXE</div>
     </div>
   );
 });
